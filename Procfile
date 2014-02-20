@@ -1,0 +1,1 @@
+web: gunicorn fakeapi:app
