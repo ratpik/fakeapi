@@ -1,10 +1,12 @@
 from faker import Factory
 import json
+import uuid
 
 
 class Person:
     def __init__(self, **kwargs):
         fake = Factory.create()
+        self.id = str(uuid.uuid4())
         self.name = kwargs.get('name', fake.name())
         self.address = kwargs.get('address', fake.address())
         self.text = kwargs.get('text', fake.text())
