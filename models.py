@@ -11,6 +11,7 @@ class Person:
         self.address = kwargs.get('address', fake.address())
         self.text = kwargs.get('text', fake.text())
         self.date_joined = kwargs.get('date_joined', fake.iso8601())
+        self.picture_url = kwargs.get('picture_url', 'http://lorempixel.com/400/200/')
 
 
     def __str__(self):
